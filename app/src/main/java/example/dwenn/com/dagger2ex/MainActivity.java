@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // TODO: 2017-11-27 Caused by: java.lang.ClassCastException: android.app.Application cannot be cast to example.dwenn.com.dagger2ex.MyApp
-        ((MyApp) getApplication()).getGitHubComponent().inject(this);
+//        ((MyApp) getApplication()).getGitHubComponent().inject(this);
+        ((MyApp)getApplicationContext()).getGitHubComponent().inject(this);
     }
 }

@@ -18,5 +18,4 @@ public class GitHubModule {
     public GithubApiInterface providesGithubInterface(Retrofit retrofit){
         return retrofit.create(GithubApiInterface.class);
     }
-
 }
